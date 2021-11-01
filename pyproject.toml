@@ -92,7 +92,7 @@ toil-cwl-runner = 'toil.cwl.cwltoil:main [cwl]'
 toil-wdl-runner = 'toil.wdl.toilwdl:main'
 _toil_mesos_executor = 'toil.batchSystems.mesos.executor:main [mesos]'
 _toil_kubernetes_executor = 'toil.batchSystems.kubernetes:executor [kubernetes]'
-import_version = 'toil.import_version:import_version'
+
 
 [tool.poetry.extras]
 aws = ["boto", "boto3", "boto3-stubs", "futures"]
@@ -114,5 +114,3 @@ requires = ["poetry-core>=1.0.0", "setuptools"]
 
 build-backend = "poetry.core.masonry.api"
 
-[toil.poetry.build]
-script = 'import_version.py'
